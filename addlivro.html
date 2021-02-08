@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>R(EAD) - Adding Books</title>
+		<link rel="shortcut icon" href="https://www.nicepng.com/png/full/17-173735_book-icon-green-book-icon-png.png">
+	</head>
+
+	<body>
+		<header>
+			<h1>My R(EAD)S<h1>
+			<a href="index.html"><button type="button" class="btn btn-success btnEst">Bookshelfs</button></a>
+		</header>
+
+		<main>
+			<div class="formulando">
+				<form>
+					<label for="nomeslivros" class="tituform">Book's Name</label>
+					<input type="text" id="nomeslivros" class="input-padrao barrAddlivro" required>
+
+					<input type="submit" value="Add to Bookshelfs" class="enviar">
+				</form>
+		    </div>
+
+		    <div class="bshelf">
+			<h2> Preview</h2>
+
+				<div class="livros">
+					<div class="livrinho">
+						<div class="card" style="width: 18rem;">
+						  <img src="https://books.google.com/books/content/images/frontcover/YSjzAQAAQBAJ?fife=w200-h300" class="card-img-top imgLivrinho" alt="Capa do livro.">
+						  <div class="card-body">
+							<h5 class="card-title">Titulo do Livro</h5>
+							<p class="card-text paragAut">Autora do Livro</p>
+						  </div>
+						</div>
+						<div class="book-shelf-changer">
+                        <select disabled="">
+                        <option value="move" disabled>Move to...</option>
+                          <option value="currentlyReading">Currently Reading</option>
+                          <option value="wantToRead">Want to Read</option>
+                          <option value="read">Read</option>
+                        </select>
+                      </div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<script src="jquery.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+	</body>
+</html>
